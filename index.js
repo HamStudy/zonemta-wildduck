@@ -879,6 +879,7 @@ module.exports.init = function (app, done) {
         let message = {
             _queue_id: (entry.id || '').toString(),
             _queue_id_seq: (entry.seq || '').toString(),
+            _message_id: (entry['message-id'] || '').toString().replace(/^[\s<]+|[\s>]+$/g, ''),
         };
 
         if (entry.rwRcptFrom) {
@@ -944,7 +945,6 @@ module.exports.init = function (app, done) {
                     message._from = (entry.from || '').toString();
                     message._to = (entry.to || '').toString();
                     message._mail_action = 'queued';
-                    message._message_id = (entry['message-id'] || '').toString().replace(/^[\s<]+|[\s>]+$/g, '');
                     message._ip = entry.src;
                     message._body_size = entry.body;
                     message._spam_score = Number(entry.score) || '';
@@ -1033,7 +1033,6 @@ module.exports.init = function (app, done) {
                 message._to = (entry.to || '').toString();
 
                 message._mail_action = 'dropped';
-                message._message_id = (entry['message-id'] || '').toString().replace(/^[\s<]+|[\s>]+$/g, '');
                 message._ip = entry.src;
                 message._body_size = entry.body;
                 message._spam_score = Number(entry.score) || '';
