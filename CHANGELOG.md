@@ -1,5 +1,47 @@
 # Changelog
 
+## [1.32.31](https://github.com/HamStudy/zonemta-wildduck/compare/v1.32.30...v1.32.31) (2026-03-19)
+
+
+### Bug Fixes
+
+* bump deps ([#44](https://github.com/HamStudy/zonemta-wildduck/issues/44)) ([30fd887](https://github.com/HamStudy/zonemta-wildduck/commit/30fd887adb0d72e02e946d8d8c33991d08d4940a))
+* bump deps ([#69](https://github.com/HamStudy/zonemta-wildduck/issues/69)) ([5a4f7df](https://github.com/HamStudy/zonemta-wildduck/commit/5a4f7df60517ac5bd64beb08476e1bdc44db4d72))
+* bump deps, so that wd dkim won't fail on node 24+ ([#61](https://github.com/HamStudy/zonemta-wildduck/issues/61)) ([c553873](https://github.com/HamStudy/zonemta-wildduck/commit/c55387380e83a462174d687bb91adabb0c598cc8))
+* bumped deps ([52392da](https://github.com/HamStudy/zonemta-wildduck/commit/52392dab2700769bc72110fd07b6f2716ece7807))
+* **cicd-pipeline:** Add pipeline for building and pushing the docker image to GHCR ([1f4eeb4](https://github.com/HamStudy/zonemta-wildduck/commit/1f4eeb438249fbdaaed8cf17e87fe5ab3f777f56))
+* **config:** DO not assume that gelf config is set ([62b7eb7](https://github.com/HamStudy/zonemta-wildduck/commit/62b7eb79efe0c2d43fcdf82ea3e24c56d82f6a3f))
+* **defer:** Apply const:sender:defer_times for failed delivery attempts ([7d24a84](https://github.com/HamStudy/zonemta-wildduck/commit/7d24a84869309920b71a0df7a0ab34f684c3b75c))
+* **deps:** Bumped dependencies ([4c29efe](https://github.com/HamStudy/zonemta-wildduck/commit/4c29efefd1f41a8f639cb55cddf5525d33aaf0a4))
+* **deps:** Bumped deps ([6b4f2a4](https://github.com/HamStudy/zonemta-wildduck/commit/6b4f2a4869f02cd58149f3d6b3aa4962442c953a))
+* **deps:** Bumped deps ([c613418](https://github.com/HamStudy/zonemta-wildduck/commit/c61341828f36ffac324e2626896dca7cc81b42dd))
+* **deps:** Bumped deps for fixes ([c656fe0](https://github.com/HamStudy/zonemta-wildduck/commit/c656fe0b87525cca5a808f4c2e45cf9af55eed32))
+* **deps:** Bumped wildduck from 1.42.1 to 1.42.5 ([4100aa0](https://github.com/HamStudy/zonemta-wildduck/commit/4100aa05286c368528373cb90694768260116302))
+* **deps:** bumped wildduck version ([463d74a](https://github.com/HamStudy/zonemta-wildduck/commit/463d74ad6edc25d06d9d1a58d2108dc44e8f6f10))
+* **docker-arm/v7-remove:** ZMS-180-5 ([#40](https://github.com/HamStudy/zonemta-wildduck/issues/40)) ([688a3c4](https://github.com/HamStudy/zonemta-wildduck/commit/688a3c491e92bf1dbf61807c95483e14be2c530f))
+* **docker-workflows:** Do not push duplicate latest on release ZMS-205 ([#43](https://github.com/HamStudy/zonemta-wildduck/issues/43)) ([2cb9583](https://github.com/HamStudy/zonemta-wildduck/commit/2cb9583114666ad555d7b650368e8b5560bfc482))
+* **docker-workflows:** Remove attestation from release. Use docker-metadata when pushing latest to ghcr ZMS-205 ([#41](https://github.com/HamStudy/zonemta-wildduck/issues/41)) ([6993939](https://github.com/HamStudy/zonemta-wildduck/commit/6993939b3ff8ce675fd56ffa170084a47503c064))
+* **docker-workflows:** ZMS-180-3 ([#38](https://github.com/HamStudy/zonemta-wildduck/issues/38)) ([b216790](https://github.com/HamStudy/zonemta-wildduck/commit/b216790007258b1a9be3d7e0e7d91703436d0a14))
+* **gelf-subject:** Set default subject limit in gelf logs ZMS-177 ([#32](https://github.com/HamStudy/zonemta-wildduck/issues/32)) ([36cc6af](https://github.com/HamStudy/zonemta-wildduck/commit/36cc6af74d3e63fb74d927a48141813b53de71a2))
+* **license-readme:** ZMS-180 ([#33](https://github.com/HamStudy/zonemta-wildduck/issues/33)) ([81c4c7e](https://github.com/HamStudy/zonemta-wildduck/commit/81c4c7e70e568aa6d4cdf496cdcd534d648ab3a2))
+* **logs:** log bounce events to graylog ([b3b8773](https://github.com/HamStudy/zonemta-wildduck/commit/b3b8773584eb58482c00b9355ae4664a53bb583e))
+* **logs:** log matches in queue poll entry ([84bf40b](https://github.com/HamStudy/zonemta-wildduck/commit/84bf40b9df26b6aad237f62c529198861cdd0937))
+* **logs:** log queue polling ([5c92731](https://github.com/HamStudy/zonemta-wildduck/commit/5c9273164189ea66c0bd67add7eccdf439883258))
+* **mta-relay:** Add support for outbound MTA relay ZMS-171 ([#35](https://github.com/HamStudy/zonemta-wildduck/issues/35)) ([f95a01a](https://github.com/HamStudy/zonemta-wildduck/commit/f95a01a10c3ba8dbb53552ba2358f0555493e779))
+* **release:** Added missing repo url to package.json ([57fb9dc](https://github.com/HamStudy/zonemta-wildduck/commit/57fb9dcbbb14bf81627eb2c3acc11e83cfe6e55a))
+* **SNI:** Autogenerate SNI certificate if needed ([1b18377](https://github.com/HamStudy/zonemta-wildduck/commit/1b183773fb7b1785ce5edbe3cb064e3b01d60679))
+* **tests:** fixed failing test ([5f758b5](https://github.com/HamStudy/zonemta-wildduck/commit/5f758b5c4bd3187c9cb7fbbe7ff7c9db67cae999))
+* **update-package.json:** ZMS-180 ([#36](https://github.com/HamStudy/zonemta-wildduck/issues/36)) ([37b0a33](https://github.com/HamStudy/zonemta-wildduck/commit/37b0a33087007d289e093472888f9b180bbdcd01))
+* **workflows-deps:** ZMSA-46: update workflows ([#55](https://github.com/HamStudy/zonemta-wildduck/issues/55)) ([b2fa193](https://github.com/HamStudy/zonemta-wildduck/commit/b2fa193cc500962d72a6772623cf9d7bc385eca1))
+* **workflows-duplicate-latest:** ZMS-180 ([#39](https://github.com/HamStudy/zonemta-wildduck/issues/39)) ([48dee49](https://github.com/HamStudy/zonemta-wildduck/commit/48dee49188348b19a0103dd5fbc0022ac6b11589))
+* ZMS-13: Add zonemta-wildduck example config into zone-mta config ([#72](https://github.com/HamStudy/zonemta-wildduck/issues/72)) ([e80bdd2](https://github.com/HamStudy/zonemta-wildduck/commit/e80bdd2eb5827ac737049dc9fc1e1bf95134ce48))
+* ZMS-17: log:entry hook, add fallbacks for undefined values ([#64](https://github.com/HamStudy/zonemta-wildduck/issues/64)) ([654c46c](https://github.com/HamStudy/zonemta-wildduck/commit/654c46ceee7c561acdaaf882227ae956c9b16e9e))
+* ZMS-280: bump deps ([#50](https://github.com/HamStudy/zonemta-wildduck/issues/50)) ([c55fc11](https://github.com/HamStudy/zonemta-wildduck/commit/c55fc1180760375867a9501fe98bb4249ad371de))
+* ZMS-39: Do not strip &lt;&gt; off of message_id ([#71](https://github.com/HamStudy/zonemta-wildduck/issues/71)) ([20f4f3f](https://github.com/HamStudy/zonemta-wildduck/commit/20f4f3fa7569dec4039c099a235fe0f917690ea2))
+* ZMSA-1: update deps, scope package, update release workflow ([#47](https://github.com/HamStudy/zonemta-wildduck/issues/47)) ([4c7ba50](https://github.com/HamStudy/zonemta-wildduck/commit/4c7ba50a8dcd87133e2e25e5214433771172ce02))
+* ZMSA-14: bump deps, update config ([#53](https://github.com/HamStudy/zonemta-wildduck/issues/53)) ([5077432](https://github.com/HamStudy/zonemta-wildduck/commit/5077432e2157125ab6963120d198612de141c3cb))
+* ZMSA-64: Add passwordType to auth object on smtp:auth hook ([#58](https://github.com/HamStudy/zonemta-wildduck/issues/58)) ([2b9c455](https://github.com/HamStudy/zonemta-wildduck/commit/2b9c45576d44282dc8331f0bd7d029ce39d4bb76))
+
 ## [1.32.30](https://github.com/zone-eu/zonemta-wildduck/compare/v1.32.29...v1.32.30) (2026-03-18)
 
 
